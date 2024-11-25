@@ -15,16 +15,22 @@
 
 Nav {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
+  padding: 0;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+Nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+Nav ul h2 {
+  display: flex;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

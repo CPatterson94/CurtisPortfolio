@@ -1,0 +1,18 @@
+Nav {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100px;
+}
+
+Nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+Nav ul h2 {
+  display: flex;
+  margin: 20px;
+}
