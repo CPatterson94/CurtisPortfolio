@@ -33,4 +33,50 @@ Nav ul h2 {
   margin: 20px;
 }
 
+@property --rotate {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+button {
+  --red: #ff0000;
+  --radius: 50px;
+  --roate: 0deg;
+  padding: 20px 30px;
+  border-radius: var(--radius);
+  background: var(--red);
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 500;
+  font-size: 20px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+button .fancy {
+  position: absolute;
+  inset: 0;
+}
+button .fancy:before {
+  content: "";
+  background: conic-gradient(from var(--rotate), transparent 0%, white 5%, transparent 10%);
+  position: absolute;
+  inset: absolute;
+  animation: rotate 2s linear infinite;
+}
+button .fancy:after {
+  content: "";
+  background: --red;
+  position: absolute;
+  inset: 2px;
+  border-radius: calc(var(--radius) - 2px);
+}
+button #text {
+  position: relative;
+}
+@keyframes rotate {
+  to {
+    --rotate: 360deg;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
