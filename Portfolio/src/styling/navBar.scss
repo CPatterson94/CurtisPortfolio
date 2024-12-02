@@ -16,17 +16,25 @@ Nav ul h2 {
   display: flex;
   margin: 20px;
 }
-
-@property --rotate {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: 0deg;
+@mixin property(
+  $variable: variable,
+  $syntax: "<angle>",
+  $inherits: true,
+  $initial-value: 0
+) {
+  @property --#{$variable} {
+    syntax: $syntax;
+    inherits: $inherits;
+    initial-value: $initial-value;
+  }
 }
+
+@include property($variable: rotate, $syntax: "<angle>", $inherits: 0deg);
 
 button {
   --red: #ff0000;
   --radius: 50px;
-  --roate: 0deg;
+  --rotate: 0deg;
   padding: 20px 30px;
   border-radius: var(--radius);
   background: var(--red);

@@ -35,13 +35,13 @@ Nav ul h2 {
 
 @property --rotate {
   syntax: "<angle>";
-  inherits: false;
-  initial-value: 0deg;
+  inherits: 0deg;
+  initial-value: 0;
 }
 button {
   --red: #ff0000;
   --radius: 50px;
-  --roate: 0deg;
+  --rotate: 0deg;
   padding: 20px 30px;
   border-radius: var(--radius);
   background: var(--red);
@@ -77,6 +77,18 @@ button #text {
   to {
     --rotate: 360deg;
   }
+}
+
+.home-container {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.home-container h1,
+.home-container p {
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=index.css.map */
