@@ -1,7 +1,12 @@
+import DateTime from "./dateTime";
+
 export default function Nav() {
   return (
     <>
       <nav>
+        <div className="nbDateTime">
+          <DateTime />
+        </div>
         <ul>
           <button>
             <div className="fancy"></div>

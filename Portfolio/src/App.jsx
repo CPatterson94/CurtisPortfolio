@@ -5,7 +5,7 @@ import "../index.css";
 export default function App() {
   return (
     <>
-      <div>
+      <div className="App">
         <Nav />
         <Home />
       </div>
