@@ -51,6 +51,10 @@ button {
   border: 0;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
 }
 button .fancy {
   position: absolute;
@@ -60,25 +64,23 @@ button .fancy:before {
   content: "";
   background: conic-gradient(from var(--rotate), transparent 0%, white 5%, transparent 10%);
   position: absolute;
-  inset: absolute;
+  inset: 0;
+  border-radius: var(--radius);
   animation: rotate 2s linear infinite;
 }
 button .fancy:after {
   content: "";
-  background: --red;
+  background: var(--red);
   position: absolute;
   inset: 2px;
   border-radius: calc(var(--radius) - 2px);
 }
-button #text {
-  position: relative;
-}
+
 @keyframes rotate {
   to {
     --rotate: 360deg;
   }
 }
-
 .home-container {
   background-color: #3a3a3a;
   padding: 20px;
