@@ -1,0 +1,25 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #3a3a3a;
+  color: white;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    &:hover {
+      color: #3a3a3a;
+    }
+  }
+}
