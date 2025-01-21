@@ -37,18 +37,21 @@ const EmailForm = () => {
     <div className="contact-form-container">
       <form onSubmit={handleSubmit} className="contact-form">
         <input
+          className="form-control"
           type="text"
           placeholder="Your Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
+          className="form-control"
           type="email"
           placeholder="Your Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
+          className="form-control"
           cols="30"
           rows="10"
           placeholder="Your Message"
