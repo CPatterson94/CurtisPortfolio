@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Resume from "./pages/resume";
-import Contact from "./pages/contactMe";
+import ContactMe from "./pages/contactMe";
 
 import "../index.css";
 
@@ -19,7 +19,7 @@ export default function App() {
             <Route path={"/about"} element={<About />} />
             <Route path={"/projects"} element={<Projects />} />
             <Route path={"/resume"} element={<Resume />} />
-            <Route path={"/contact"} element={<Contact />} />
+            <Route path={"/contact"} element={<ContactMe />} />
           </Routes>
         </BrowserRouter>
       </div>
