@@ -13,7 +13,7 @@ export default function DateTime() {
   }, []); // Empty dependency array ensures effect runs only once when component mounts
 
   return (
-    <div style={{ display: "flex", gap: "10px" }}>
+    <div className="nbDateTime">
       <span>{date.toLocaleTimeString()}</span>
       <span>{date.toLocaleDateString()}</span>
     </div>

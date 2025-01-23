@@ -13,74 +13,22 @@
   background-color: #242424;
 }
 
-Nav {
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  min-height: 100px;
-}
-
-Nav ul {
+.nbDateTime {
+  cursor: default;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  gap: 10px;
 }
 
-Nav ul h2 {
-  display: flex;
-  margin: 20px;
-}
-
-@property --rotate {
-  syntax: "<angle>";
-  inherits: 0deg;
-  initial-value: 0;
-}
 button {
-  --red: #ff0000;
-  --radius: 50px;
-  --rotate: 0deg;
-  padding: 20px 30px;
-  border-radius: var(--radius);
-  background: var(--red);
-  color: rgba(255, 255, 255, 0.87);
-  font-weight: 500;
-  font-size: 20px;
-  border: 0;
-  position: relative;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5em;
   cursor: pointer;
-}
-button:hover {
-  cursor: pointer;
-}
-button .fancy {
-  position: absolute;
-  inset: 0;
-}
-button .fancy:before {
-  content: "";
-  background: conic-gradient(from var(--rotate), transparent 0%, white 5%, transparent 10%);
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius);
-  animation: rotate 2s linear infinite;
-}
-button .fancy:after {
-  content: "";
-  background: var(--red);
-  position: absolute;
-  inset: 2px;
-  border-radius: calc(var(--radius) - 2px);
 }
 
-@keyframes rotate {
-  to {
-    --rotate: 360deg;
-  }
-}
 .home-container {
   background-color: #3a3a3a;
   padding: 20px;
