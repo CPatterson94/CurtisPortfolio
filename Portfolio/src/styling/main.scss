@@ -14,3 +14,12 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 }
+
+.main-content {
+  margin-left: 200px; // Default margin when nav is expanded
+  transition: margin-left 0.3s;
+
+  .nav.collapsed + & {
+    margin-left: 70px; // Adjust margin when nav is collapsed
+  }
+}
