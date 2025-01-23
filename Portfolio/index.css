@@ -14,6 +14,7 @@
 }
 
 .main-content {
+  padding-top: 10px;
   margin-left: 200px;
   transition: margin-left 0.3s;
 }
@@ -60,10 +61,16 @@
   flex-direction: column;
   padding: 10px;
 }
-.nav .nav-links .navLink {
+.nav .nav-links .nav-link {
   margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  text-decoration: none;
 }
-.nav .nav-links .navLink button {
+.nav .nav-links .nav-link button {
   width: 100%;
   text-align: left;
   background-color: transparent;
@@ -76,10 +83,10 @@
   align-items: center;
   gap: 10px;
 }
-.nav .nav-links .navLink button:hover {
+.nav .nav-links .nav-link button:hover {
   background-color: #3a3a3a;
 }
-.nav .nav-links .navLink button svg {
+.nav .nav-links .nav-link button svg {
   font-size: 1.5em;
 }
 

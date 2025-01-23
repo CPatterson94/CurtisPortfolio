@@ -23,28 +23,28 @@ export default function Nav() {
         <button className="toggle-button" onClick={toggleNav}>
           <FontAwesomeIcon icon={faBars} />
         </button>
-        <Link to="/" className="navLink">
+        <Link to="/" className="nav-link">
           <button>
             <FontAwesomeIcon icon={faHome} />
-            {!collapsed && " Home"}
+            {!collapsed && "Home"}
           </button>
         </Link>
-        <Link to="/about" className="navLink">
+        <Link to="/about" className="nav-link">
           <button>
             <FontAwesomeIcon icon={faUser} />
-            {!collapsed && " About Me"}
+            {!collapsed && "About Me"}
           </button>
         </Link>
-        <Link to="/projects" className="navLink">
+        <Link to="/projects" className="nav-link">
           <button>
             <FontAwesomeIcon icon={faProjectDiagram} />
-            {!collapsed && " Projects"}
+            {!collapsed && "Projects"}
           </button>
         </Link>
-        <Link to="/contact" className="navLink">
+        <Link to="/contact" className="nav-link">
           <button>
             <FontAwesomeIcon icon={faEnvelope} />
-            {!collapsed && " Contact Me"}
+            {!collapsed && "Contact Me"}
           </button>
         </Link>
       </div>

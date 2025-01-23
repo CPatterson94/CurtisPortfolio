@@ -41,9 +41,14 @@
     flex-direction: column;
     padding: 10px;
 
-    .navLink {
+    .nav-link {
       margin: 5px 0;
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 5px;
+      text-decoration: none;
       button {
         width: 100%;
         text-align: left;
