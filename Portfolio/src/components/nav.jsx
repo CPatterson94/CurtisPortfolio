@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Nav() {
   return (
     <nav>
-      <div className="nbDateTime">
+      <div className="nbDateTime-container">
         <DateTime />
       </div>
       <div>
@@ -16,9 +16,6 @@ export default function Nav() {
         </Link>
         <Link to="/projects" className="navLink">
           <button>Projects</button>
-        </Link>
-        <Link to="/resume" className="navLink">
-          <button>Resume</button>
         </Link>
         <Link to="/contact" className="navLink">
           <button>Contact Me</button>
