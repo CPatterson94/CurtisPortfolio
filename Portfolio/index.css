@@ -41,6 +41,11 @@
 .nav .nbDateTime-container {
   padding: 10px;
 }
+.nav .nbDateTime {
+  cursor: default;
+  display: flex;
+  gap: 10px;
+}
 .nav .nav-links {
   display: flex;
   flex-direction: column;
