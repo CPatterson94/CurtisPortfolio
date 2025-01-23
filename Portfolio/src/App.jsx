@@ -13,13 +13,14 @@ export default function App() {
       <div className="App">
         <BrowserRouter>
           <Nav />
-          <Routes>
-            <Route path={"/"} element={<Home />} />
-            <Route path={"/about"} element={<About />} />
-            <Route path={"/projects"} element={<Projects />} />
-
-            <Route path={"/contact"} element={<ContactMe />} />
-          </Routes>
+          <div className="main-content">
+            <Routes>
+              <Route path={"/"} element={<Home />} />
+              <Route path={"/about"} element={<About />} />
+              <Route path={"/projects"} element={<Projects />} />
+              <Route path={"/contact"} element={<ContactMe />} />
+            </Routes>
+          </div>
         </BrowserRouter>
       </div>
     </>
