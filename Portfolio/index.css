@@ -129,6 +129,11 @@
 .contact-container a:hover {
   color: #3a3a3a;
 }
+.contact-container label {
+  font-size: 1.5rem;
+  display: block;
+  text-align: left;
+}
 
 .contact-form-container {
   display: flex;

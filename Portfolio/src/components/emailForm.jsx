@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import emailjs from "emailjs-com";
 const EmailForm = () => {
   const [name, setName] = useState("");
@@ -36,25 +36,28 @@ const EmailForm = () => {
   return (
     <div className="contact-form-container">
       <form onSubmit={handleSubmit} className="contact-form">
+        <label className="form-labels">Your Name:</label>
         <input
           className="form-control"
           type="text"
-          placeholder="Your Name"
+          placeholder="John Doe"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        <label className="form-labels">Your Email:</label>
         <input
           className="form-control"
           type="email"
-          placeholder="Your Email"
+          placeholder="Email@domain.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <label className="form-labels">Message:</label>
         <textarea
           className="form-control"
           cols="30"
           rows="10"
-          placeholder="Your Message"
+          placeholder="Type your message here..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
