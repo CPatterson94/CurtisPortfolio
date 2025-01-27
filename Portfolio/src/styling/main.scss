@@ -15,10 +15,18 @@
   background-color: #242424;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .main-content {
-  padding-top: 10px;
+  padding-top: 90px;
   margin-left: 200px; // Default margin when nav is expanded
   transition: margin-left 0.3s;
+  padding-bottom: 80px; // Add padding to prevent overlap with footer
 
   .nav.collapsed + & {
     margin-left: 70px; // Adjust margin when nav is collapsed

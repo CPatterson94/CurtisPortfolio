@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Banner from "./components/banner";
 import Nav from "./components/nav";
+import Footer from "./components/footer";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Projects from "./pages/projects";
@@ -12,6 +14,7 @@ export default function App() {
     <>
       <div className="App">
         <BrowserRouter>
+          <Banner />
           <Nav />
           <div className="main-content">
             <Routes>
@@ -21,6 +24,7 @@ export default function App() {
               <Route path={"/contact"} element={<ContactMe />} />
             </Routes>
           </div>
+          <Footer />
         </BrowserRouter>
       </div>
     </>
