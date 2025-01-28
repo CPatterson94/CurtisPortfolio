@@ -152,6 +152,44 @@ body {
   color: rebeccapurple;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .home-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .home-paragraph {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+  }
+  .home-paragraph h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .home-paragraph h2 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .home-image {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 200px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .home-container {
     display: flex;
@@ -164,12 +202,56 @@ body {
   }
   .home-paragraph {
     display: flex;
+    flex-direction: column;
     color: #ffffff;
-    font-size: 1.2em;
     align-items: center;
     text-align: center;
     padding: 20px;
-    width: 400px;
+    width: 250px;
+  }
+  .home-paragraph h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .home-paragraph h2 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .home-image {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .home-container {
+    display: flex;
+    justify-content: center;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .home-paragraph {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+  }
+  .home-paragraph h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .home-paragraph h2 {
+    margin-top: 0;
+    padding-top: 0;
   }
   .home-image {
     display: flex;
@@ -180,7 +262,7 @@ body {
     width: 300px;
   }
 }
-@media only screen and (min-width: 980px) {
+@media screen and (min-width: 1200px) {
   .home-container {
     display: flex;
     justify-content: center;
@@ -198,6 +280,14 @@ body {
     text-align: center;
     padding: 20px;
     width: 400px;
+  }
+  .home-paragraph h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .home-paragraph h2 {
+    margin-top: 0;
+    padding-top: 0;
   }
   .home-image {
     display: flex;

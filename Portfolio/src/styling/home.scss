@@ -1,4 +1,42 @@
-@media only screen and (max-width: 480px) {
+//Phone View
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .home-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a; // Lighter grey background
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffffff; // Bubble border color
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .home-paragraph {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff; // White text
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    h1 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+  .home-image {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border: 2px solid #ffffff; // Bubble border color
+    border-radius: 5px;
+    width: 200px;
+  }
 }
 
 //Tablet View
@@ -15,12 +53,59 @@
   }
   .home-paragraph {
     display: flex;
+    flex-direction: column;
     color: #ffffff; // White text
-    font-size: 1.2em;
     align-items: center;
     text-align: center;
     padding: 20px;
-    width: 400px;
+    width: 250px;
+    h1 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+  .home-image {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border: 2px solid #ffffff; // Bubble border color
+    border-radius: 5px;
+    width: 250px;
+  }
+}
+
+//Laptop View
+
+@media only screen and (min-width: 991px) {
+  .home-container {
+    display: flex;
+    justify-content: center;
+    background-color: #3a3a3a; // Lighter grey background
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffffff; // Bubble border color
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .home-paragraph {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff; // White text
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    h1 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
   .home-image {
     display: flex;
@@ -34,7 +119,7 @@
 
 //Desktop View
 
-@media only screen and (min-width: 980px) {
+@media screen and (min-width: 1200px) {
   .home-container {
     display: flex;
     justify-content: center;
@@ -52,7 +137,16 @@
     text-align: center;
     padding: 20px;
     width: 400px;
+    h1 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
+
   .home-image {
     display: flex;
     justify-content: space-around;
